@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Ores</title>
+    <link href="2.css" type="text/css" rel="stylesheet">
+</head>
+<a href="2.html"> BACK</a>
+<br><br><br>
+<img id="rotateImage" src="0ores.webp" alt="Rotatable Image" onclick="rotateImage()" align="right" width="550" height="400">
+<body>
+    <h1>Types of Builds: CLICK IMAGE FOR FUN</h1>
+    <ul>
+        <li>Ramp</li>
+        <li>Cone</li>
+        <li>Wall</li>
+        <li>Floor</li>
+    </ul>
+    <script>
+        let rotationDegree = 0;
+
+function rotateImage() {
+  rotationDegree += 90;
+  document.getElementById('rotateImage').style.transform = `rotate(${rotationDegree}deg)`;
+}
+        </script>
+</body>
+</html>

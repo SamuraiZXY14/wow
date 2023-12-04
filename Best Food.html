@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="2.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+ <br>
+    <a href="2.html"> BACK</a>
+ <button onclick="color(),red()" class="button">Click Me To Change Table Color</button>
+<br><br><br><br>
+ <table class="styled-table" width="750" height="500" id="tabl" >
+<thead>
+    <tr>
+        <th>Food</th>
+        <th>Saturation</th>
+        <th>Hunger Pts</th>
+    </tr>
+</thead>
+<tbody>
+    <tr class="active-row">
+        <td> Beef 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="0steak.webp" height="55px" ></td>
+        <td>12.8</td>
+        <td>8</td>
+    </tr>
+    <tr class="active-row">
+        <td>Cooked Porchops&nbsp;&nbsp;<img src="0pork.webp" height="55px"></td>
+        <td>12.8</td>
+        <td>8</td>  
+    </tr>
+    <tr class="active-row">
+        <td>Cooked Mutton
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="0mutt.webp" height="55px"></td>
+        <td>9.6</td>
+        <td>6</td>
+    </tr>
+    <tr class="active-row">
+        <td>Cooked Chicken
+            &nbsp;&nbsp;
+            <img src="0chick.webp" height="55px"></td>
+        <td>7.2</td>
+        <td>6</td>
+    </tr> 
+    <tr class="active-row">
+        <td>Golden Carrot
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="0gcarr.webp" height="55px"></td>
+        <td>14.4</td>
+        <td>6</td>
+    </tr>
+
+</tbody>
+</table>
+<script>
+    	function color() {
+ var colar = prompt("What is your color?");
+  document.getElementById("tabl").style.backgroundColor = colar;
+}
+function red(){
+    alert("MY BAD FOR NOT CHANGING CONTENT BUT RANDOMLY THE THEME")
+}
+</script>
+</body>
+</html>

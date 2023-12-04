@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+  a{
+  font-family: 'CustomFont', Arial, sans-serif;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 40pt;
+  background-color: rgb(52, 52, 52);
+  color: rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 15px;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "CustomFont";
+  src: url("Fortnite.ttf");
+}
+a:hover{
+  font-size: 42pt; 
+}
+.heading-background{
+  color:rgb(255, 255, 255);
+  font-weight: 300px;
+}
+h1{
+  color:rgb(255, 255, 255)
+}
+.text-container{
+  position: top;
+  color: rgb(52, 52, 52);
+  left: 25rem;
+  top: 2rem;
+  background-color: rgb(255, 255, 255);
+  opacity:100%;
+  padding:50px;
+}
+.gfg{
+  margin: 3%;
+  position: relative;
+}
+#bannerimage {
+  background-image: url(0banner.jpeg);
+ height: 360px;
+ background-position: center;
+}
+
+
+  
+

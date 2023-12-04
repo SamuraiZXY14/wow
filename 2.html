@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Griddy</title>
+    <style>
+        #dog {
+            width: 600px;
+            height: 600px;
+            background: url("https://i.pinimg.com/originals/73/9e/0c/739e0c55662c888a378186ccefde9b92.gif");
+            animation: dance 2s infinite;
+        }
+        @keyframes dance {
+            50% 
+            {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+  <script>
+  window.onload = setTimeout(function() {
+                alert('LETS EMOTE (if you get same emote keep refreshing)');
+            }, 1000); 
+       
+   
+
+</script>
+</head>
+<body>
+    <div id="dog"></div>
+    <script>
+       
+        var time = 3000;
+        var og = "/Users/samuelwing/Downloads/Data Web Analysis/Quiet Project/.html";
+
+        function getrando() {
+            var images = [
+                "https://i.pinimg.com/originals/73/9e/0c/739e0c55662c888a378186ccefde9b92.gif",
+                "https://media.tenor.com/awnbsntmYkoAAAAd/fortnite-dance-fortnite-emote.gif", 
+                "https://media.tenor.com/BgSjY7zp_p0AAAAd/emote-fresh.gif"
+            ];
+
+            var randoimg = Math.floor(Math.random() * images.length);
+            return images[randoimg];
+        }
+
+        document.getElementById("dog").style.backgroundImage = 'url("' + getrando() + '")';
+
+        function back() {
+            window.location.href = og;
+        }
+        setTimeout(back, time);
+    </script>
+</body>
+</html>
